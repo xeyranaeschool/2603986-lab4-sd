@@ -1,7 +1,7 @@
 document.getElementById('search-btn').addEventListener('click', async () => {
     const countryName = document.getElementById('country-input').value.trim();
     if (!countryName) return;
-
+    
     try {
         const response = await fetch(`https://restcountries.com/v3.1/name/${countryName}`);
         if (!response.ok) throw new Error('Country not found!');
