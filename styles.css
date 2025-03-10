@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px
+}
+
+input, button {
+    padding: 10px;
+    margin: 10px 0;
+}
+
+#country-info, #bordering countries {
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.country-card {
+    margin: 10px 0;
+    padding: 10px;
+    background: #f9f9f9
+}
