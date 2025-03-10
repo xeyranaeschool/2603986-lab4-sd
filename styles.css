@@ -5,9 +5,16 @@ body {
     padding: 20px
 }
 
-input, button {
+input {
     padding: 10px;
     margin: 10px 0;
+    width: 75%;
+}
+
+button {
+    padding: 10px;
+    margin: 10px 0;
+    width: 25%;
 }
 
 #country-info, #bordering countries {
