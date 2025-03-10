@@ -28,7 +28,7 @@ function displayCountryInfo(country) {
         <p>Capital: ${country.capital?.[0] || 'N/A'}</p>
         <p>Population: ${country.population.toLocaleString()}</p>
         <p>Region: ${country.region}</p>
-        <p>Flag: ${country.flag}</p>
+        <p>Flag:</p>
         <img src="${country.flags.png}" alt="${country.name.common} Flag" width="100">
     `;
 }
