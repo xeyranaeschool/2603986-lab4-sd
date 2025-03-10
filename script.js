@@ -3,17 +3,14 @@ document.getElementById('search-btn').addEventListener('click', async () => {
     if (!countryName) return;
 
     try {
-        // Fetch country data
         const response = await fetch(`https://restcountries.com/v3.1/name/${countryName}`);
         if (!response.ok) throw new Error('Country not found!');
         
         const data = await response.json();
-        const country = data[0]; // Use the first result
-        
-        // Display country info
+        const country = data[0];
+
         displayCountryInfo(country);
         
-        // Fetch and display bordering countries
         if (country.borders) {
             displayBorderingCountries(country.borders);
         } else {
@@ -31,6 +28,7 @@ function displayCountryInfo(country) {
         <p>Capital: ${country.capital?.[0] || 'N/A'}</p>
         <p>Population: ${country.population.toLocaleString()}</p>
         <p>Region: ${country.region}</p>
+        <p>Flag: ${country.flag}</p>
         <img src="${country.flags.png}" alt="${country.name.common} Flag" width="100">
     `;
 }
