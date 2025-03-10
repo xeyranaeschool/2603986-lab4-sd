@@ -1,6 +1,6 @@
 body {
     font-display:  Helvetica;
-    max-width: 800px;
+    width: auto;
     margin: 0 auto;
     padding: 20px
 }
@@ -8,13 +8,11 @@ body {
 input {
     padding: 10px;
     margin: 10px 0;
-    width: 100%;
 }
 
 button {
     padding: 10px;
     margin: 10px 0;
-    width: 100%;
 }
 
 #country-info, #bordering countries {
